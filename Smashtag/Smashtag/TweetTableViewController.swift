@@ -7,9 +7,28 @@
 //
 
 import UIKit
+import Twitter
 
 class TweetTableViewController: UITableViewController {
 
+    private var tweets = [Array<Tweet>]()
+    
+    var searchText: String? {
+        didSet {
+            tweets.removeAll()
+            tableView.reloadData()
+            searchForTweets()
+            title = searchText
+        }
+    }
+    
+    private func searchForTweets() {
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        searchText = "#standford"
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
