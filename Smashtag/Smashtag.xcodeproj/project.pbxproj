@@ -14,6 +14,7 @@
 		C8620A272008C04F0039BFD2 /* TweetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8620A262008C04F0039BFD2 /* TweetTableViewController.swift */; };
 		C8620A292008E7510039BFD2 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8620A282008E7510039BFD2 /* Twitter.framework */; };
 		C8620A2A2008E7510039BFD2 /* Twitter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8620A282008E7510039BFD2 /* Twitter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C8D36C87200DCD2300046314 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D36C86200DCD2300046314 /* TweetTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,7 @@
 		C8620A1F2008BEE70039BFD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8620A262008C04F0039BFD2 /* TweetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewController.swift; sourceTree = "<group>"; };
 		C8620A282008E7510039BFD2 /* Twitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Twitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8D36C86200DCD2300046314 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				C8620A172008BEE70039BFD2 /* Main.storyboard */,
 				C8620A262008C04F0039BFD2 /* TweetTableViewController.swift */,
+				C8D36C86200DCD2300046314 /* TweetTableViewCell.swift */,
 				C8620A1F2008BEE70039BFD2 /* Info.plist */,
 				C8620A252008BF0D0039BFD2 /* Supporting */,
 			);
@@ -166,6 +169,7 @@
 			files = (
 				C8620A142008BEE70039BFD2 /* AppDelegate.swift in Sources */,
 				C8620A272008C04F0039BFD2 /* TweetTableViewController.swift in Sources */,
+				C8D36C87200DCD2300046314 /* TweetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
