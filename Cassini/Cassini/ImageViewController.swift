@@ -20,6 +20,7 @@ class ImageViewController: UIViewController{
     
     private func fetchImage() {
         if let url = imageURL {
+            spinner.startAnimating()
             DispatchQueue.global(qos: .userInitiated).async { [weak self] in
                 let urlContents = try? Data(contentsOf: url)
                 if let imageData = urlContents, url == self?.imageURL {
@@ -34,6 +35,8 @@ class ImageViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad() 
     }
+    
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -61,6 +64,7 @@ class ImageViewController: UIViewController{
             imageView.image = newValue
             imageView.sizeToFit()
             scrollView?.contentSize = imageView.frame.size
+            spinner?.stopAnimating()
         }
     }
 }
