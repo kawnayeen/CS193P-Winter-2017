@@ -22,11 +22,13 @@ class ImageViewController: UIViewController{
         if let url = imageURL {
             DispatchQueue.global(qos: .userInitiated).async { [weak self] in
                 let urlContents = try? Data(contentsOf: url)
-                if let imageData = urlContents {
-                    self?.image = UIImage(data: imageData)
+                if let imageData = urlContents, url == self?.imageURL {
+                    DispatchQueue.main.async {
+                        self?.image = UIImage(data: imageData)
+                    }
                 }
             }
-        }
+        } 
     }
     
     override func viewDidLoad() {
