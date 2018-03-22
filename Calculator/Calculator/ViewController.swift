@@ -26,7 +26,11 @@ class ViewController: UIViewController {
         let digit = sender.currentTitle!
         if userInTheMiddleOfTyping {
             let textCurrentlyInDisplay = display.text!
-            display.text = textCurrentlyInDisplay + digit
+            if digit == "." && textCurrentlyInDisplay.range(of: digit) != nil {
+                print("Dot found")
+            } else {
+                display.text = textCurrentlyInDisplay + digit
+            }
         } else {
             display.text = digit
             userInTheMiddleOfTyping = true
