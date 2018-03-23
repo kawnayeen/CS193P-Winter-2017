@@ -79,7 +79,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="84" height="110.5"/>
                                                         <color key="backgroundColor" red="0.86969048829999995" green="0.86969048829999995" blue="0.86969048829999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="π"/>
+                                                        <state key="normal" title="✅"/>
                                                         <connections>
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EFM-Kv-pfJ"/>
                                                         </connections>

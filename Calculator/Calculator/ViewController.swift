@@ -13,6 +13,13 @@ class ViewController: UIViewController {
     
     var userInTheMiddleOfTyping = false
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        brain.addUnaryOperation(named: "✅") { [weak self] in
+            self?.display.textColor = UIColor.green
+            return sqrt($0)
+        }
+    }
     var displayValue: Double {
         get {
             return Double(display.text!)!
